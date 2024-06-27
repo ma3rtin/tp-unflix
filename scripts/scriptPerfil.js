@@ -149,5 +149,5 @@ function guardarCambios() {
 
 function cerrarSesion(){
   localStorage.clear();
-  window.location.href="../pages/login.html"
+  window.location.href="../index.html";
 }

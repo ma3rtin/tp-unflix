@@ -20,7 +20,7 @@ formulario.addEventListener("submit", function (e) {
   let formularioValido = validarFormulario();
   
   if (formularioValido) {
-    window.location.href = "/login.html";
+    window.location.href = "../index.html";
   }
 });
 function validarFormulario() {
