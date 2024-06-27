@@ -22,6 +22,6 @@ enviar.addEventListener("click", (e) => {
   if (!validarForm()) {
     alert("Completar los campos.");
   } else {
-    window.location.href = "../pages/login.html";
+    window.location.href = "../index.html";
   }
 });
