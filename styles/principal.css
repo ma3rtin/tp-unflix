@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins';
+    background-color: #010513;
+}
+
+.menu{
+    width: 15%;
+    height: 100%;
+    padding-top:0%;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    background-color: #0A1D56;
+}
+
+.logoPrincipal{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    padding-left: 30px;
+}
+
+.logo{
+    height: 130px;
+    width: 1x;
+    border-radius: 20px;
+}
+
+.opcion{
+    padding: 20% 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.opcion:hover{
+    background-color: #372e871e;
+    color:#ffffff;
+}
+
+/*categorias*/
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+}
+
+.categorias {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    left: 100%;
+}
+
+.contenedor:hover .categorias {
+    display: block;
+    left: 100%;
+    bottom: 40%;
+}
+
+/* Estilos de los enlaces de categoria*/
+
+.categorias a {
+    background-color: #0c2266;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.4s;
+
+}
+
+.categorias a:hover {
+    color: #ffffff;
+    background-color:#463e91;
+}
+
+main{
+    width: 85%;
+    height: 100%;
+
+    position: fixed;
+    left: 15%;
+
+    overflow: auto;
+    
+}
+
+.barraSuperior{
+    margin: 0%;
+    
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background-color: #010513;
+}
+
+.buscador{
+    position: relative;
+    left: 25%;
+}
+
+#buscar{
+   padding: 10px 5px;
+   width: 400px;
+   border-radius: 20px;
+   background-color:#5d51c752;
+    border: #372e871e;
+    color: aliceblue;
+    opacity: 0.5;
+    outline:none;
+}
+
+.fotoPerfil{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+}
+
+
+a.perfil{
+    display:flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+a.perfil:hover{
+    background-color: #372e871e;
+    border-radius: 80%;
+    transform: scale(1.1);
+}
+
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    padding:5% 5%; 
+    margin: 0%;
+}
+
+#grilla{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+  }
+  
+  .seccion {
+    display: flex;
+    justify-content: center;
+  }
+
+  .link{
+    width: 200px;
+    height: 300px;
+    z-index: 99;
+
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .link:hover{
+    background-color: #372e871e;
+  }
+
+  .poster{
+    width: 170px;
+    height: 250px;
+
+    position: relative;
+    top:9%;
+
+    transition: transform 0.2s ease;
+  }
+
+  .poster:hover{
+    transform: scale(1.1);
+  }
+

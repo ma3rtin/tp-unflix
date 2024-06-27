@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/principal.css" />
+    <link rel="icon" href="../assets/images/iconos/logo.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Principal</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <section class="logoPrincipal">
+        <img src="../assets/images/iconos/logoBlanco.png" class="logo" />
+      </section>
+      <a class="opcion" href="../pages/principal.html">INICIO</a>
+      <div class="contenedor">
+        <a class="opcion" id="pelicula" href="#" onclick='aplicarFiltro("pelicula")'>PELÍCULAS</a>
+        <div class="categorias">
+          <a class="categoria" id="drama" href="#" onclick='aplicarFiltro("pelicula", "drama")'>Drama</a>
+          <a class="categoria" id="ciencia ficcion" href="#" onclick='aplicarFiltro("pelicula", "ciencia ficcion")'>Ciencia Ficción</a>
+          <a class="categoria" id="comedia" href="#" onclick='aplicarFiltro("pelicula", "comedia")'>Comedia</a>
+          <a class="categoria" id="terror" href="#" onclick='aplicarFiltro("pelicula", "terror")'>Terror</a>
+          <a class="categoria" id="romance" href="#" onclick='aplicarFiltro("pelicula", "romance")'>Romance</a>
+        </div>
+      </div>
+      <div class="contenedor">
+        <a class="opcion formato" id="serie" href="#" onclick='aplicarFiltro("serie")'>SERIES</a>
+        <div class="categorias">
+          <a class="categoria" id="drama" href="#" onclick='aplicarFiltro("serie", "drama")'>Drama</a>
+          <a class="categoria" id="ciencia ficcion" href="#" onclick='aplicarFiltro("serie", "ciencia ficcion")'>Ciencia Ficción</a>
+          <a class="categoria" id="comedia" href="#" onclick='aplicarFiltro("serie", "comedia")'>Comedia</a>
+          <a class="categoria" id="terror" href="#" onclick='aplicarFiltro("serie", "terror")'>Terror</a>
+          <a class="categoria" id="romance" href="#" onclick='aplicarFiltro("serie", "romance")'>Romance</a>
+        </div>
+      </div>   
+    </nav>
+
+    <main>
+      <div class="barraSuperior">
+        <div class="buscador">
+          <label for="buscar">
+            <input type="search" id="buscar" placeholder=" Buscar" onkeyup="buscar()" />
+          </label>
+        </div>
+
+        <div class="perfil">
+          <a class="perfil" href="../pages/cuenta.html">
+            <img class="fotoPerfil" src="../assets/images/iconos/perfil.png" />
+          </a>
+        </div>
+      </div>
+
+      <div class="contenido" >
+        <div id="grilla">
+         
+
+        </div>
+      </div>
+
+    
+    </main>
+
+    <script src="../scripts/scriptPrincipal.js"></script>
+  </body>
+</html>

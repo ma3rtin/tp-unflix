@@ -1,0 +1,83 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/pantallasPerfil.css">
+  <link rel="icon" href="../assets/images/iconos/logo.png" type="image/x-icon">
+  <title>Perfil</title>
+</head>
+
+<body>
+  
+  <nav class="menu">
+    <section class="logoPrincipal">
+      <img src="../assets/images/iconos/logoBlanco.png" class="logo" />
+    </section>
+    <a class="opcion" href="../pages/principal.html">VOLVER</a>
+    </div>
+  
+  </nav>
+
+  <main>
+
+      
+        <div class="barraPerfil">
+          <section class="perfil">
+            <a class="linkPerfil" href="#"><img src="../assets/images/iconos/perfil.png" alt="foto de perfil" class="fotoPerfil"></a>
+            <p class="nombreUsuario grande"></p>
+           </section>
+        </div>
+      
+
+        <div class="configuracion">
+          
+            <div class="opciones">
+                <a href="../pages/cuenta.html" class="opcionConfiguracion elegida">CUENTA</a>
+                <a href="../pages/suscripcion.html" class="opcionConfiguracion">SUSCRIPCION</a>
+                <a href="#" class="opcionConfiguracion" onclick="cerrarSesion()">CERRAR SESION</a>
+            </div>
+
+            <div class="informacion">
+
+                <h4>INFORMACIÓN DE LA CUENTA</h4>
+
+                <section class="actual">
+                    <P class="nombreUsuario">Nombre de usuario: <span id="usuario"></span></P>
+                    <p class="direccionMail">Dirección de email: pepe@gmail.com</p> 
+                    <p id="contraActual">Contraseña: </p>
+                </section>
+
+             <div id="cartel"><div><p>La contraseña se cambió exitosamente</p><button class="boton" onclick="cerrar()">Aceptar</button></div></div>
+
+
+                <h4>CAMBIAR CONTRASEÑA</h4>
+
+                <section class="edicion">
+                
+                    <form id="cambioContraseña">
+    
+                        <label for="contraseña1">Nueva Contraseña</label>
+                        <input type="password" id="contraseña1" class="contraseña1" required/>
+                
+                        <label for="contraseña2">Confirmar contraseña</label>
+                        <input type="password" id="contraseña2" class="contraseña2" required />
+
+        
+                    </form>
+                
+                </section>
+
+                <section class="seccionBotones">
+                    
+                  <button type="submit" class="boton" id="cambiar" onclick="cambiarContraseña()">Cambiar Contraseña</button>
+                
+                </section>
+            </div> 
+
+        </div>
+      
+  </main>
+    
+  <script src="../scripts/scriptPerfil.js"></script>
+</body>
+</html>

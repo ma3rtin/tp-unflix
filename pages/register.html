@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/register.css" />
+    
+    <link rel="icon" href="../assets/images/iconos/logo.png" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/73d4e66af6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Mubi</title>
+  </head>
+  <body>
+    <nav>
+      <img src="../assets/images/logoBlanco.png" alt="">
+      <ul>
+        <li><a href="./login.html">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form action="" method="get" id="formulario">
+        <h2>Registro</h2>
+        <div class="form_div">
+          <div class="datos_personales">
+            <label class="item_form" for="nombre">Nombre</label>
+            <input
+              class="item_form"
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresar nombre"
+            />
+
+            <label class="item_form" for="apellido">Apellido</label>
+            <input
+              class="item_form"
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Ingresar apellido"
+            />
+
+            <label class="item_form" for="email">Email</label>
+            <input
+              class="item_form"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ingresar email"
+            />
+
+            <label class="item_form" for="usuario">Nombre de usuario</label>
+            <input
+              class="item_form"
+              type="text"
+              id="usuario"
+              name="usuario"
+              placeholder="Ingresar nombre de usuario"
+            />
+
+            <label class="item_form" for="contraseña">Contraseña</label>
+            <input
+              type="password"
+              id="contrasenia"
+              placeholder="Ingresar contraseña"
+            />
+            <label class="item_form" for="contraseña2"
+              >Confirmar contraseña</label
+            >
+            <input
+              type="password"
+              id="contrasenia2"
+              placeholder="Repetir contraseña"
+            />
+          </div>
+          <div class="datos_pago">
+            <p class="titulo_pago">Método de pago</p>
+            <div class="tarjeta">
+              <input type="radio" id="tarjeta" name="pago" />
+              <label for="tarjeta">Tarjeta de crédito</label>
+              <div class="numero_tarjeta">
+                <input
+                  type="number"
+                  id="numero"
+                  title="numero"
+                  placeholder="Número de tarjeta"
+                />
+                <input type="number" id="pin" title="pin" placeholder="XXX" />
+              </div>
+            </div>
+            <div class="cupones">
+              <div class="titulo_cupon">
+                <input type="radio" id="cupon" name="pago" />
+                <label for="cupon">Cupón de pago</label>
+              </div>
+
+              <div class="pago_cupon">
+                <input
+                  type="checkbox"
+                  id="pagofacil"
+                  title="pago"
+                  name="pago"
+                />
+                <label for="pagofacil">Pago fácil</label>
+                <input type="checkbox" id="rapipago" title="pago" name="pago" />
+                <label for="rapipago">RapiPago</label>
+              </div>
+            </div>
+            <div class="transferencia">
+              <input type="radio" name="pago" id="tranferencia" />
+              <label for="tranferencia">Transferencia</label>
+              <p><span>CBU:</span> 12344393839440294123</p>
+            </div>
+          </div>
+        </div>
+
+        <input type="submit" id="enviar" title="enviar"  class="boton" value="Enviar">
+        <a class="link_registro" href="./login.html">Tengo una cuenta</a>
+
+        <div class="mensaje" id="mensaje">
+
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer_copyright">
+        <div class="div_redirects">
+          <a href="" class="redirects">Sobre nosotros</a>
+          <a href="" class="redirects">Términos y condiciones</a
+          ><a href="" class="redirects">Contacto</a>
+        </div>
+        <p class="copyright">© 2024 Mubi. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer_logo"><img src="../assets/images/logoBlanco.png" alt=""></div>
+      <div class="footer_links">
+        <div class="footer_link">
+          <i class="fa-brands fa-square-facebook"></i>
+          <a href="">Facebook</a>
+        </div>
+        <div class="footer_link">
+          <i class="fa-brands fa-square-twitter"></i>
+          <a href="">Twitter</a>
+        </div>
+        <div class="footer_link">
+          <i class="fa-brands fa-square-instagram"></i>
+          <a href="">Instagram</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts/register.js"></script>
+  </body>
+</html>

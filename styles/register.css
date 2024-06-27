@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+li:hover {
+    color: #387ADF;
+}
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0A1D56;
+    color: #ffff;
+}
+
+nav {
+    font-size: 14px;
+    width: 100%;
+    box-sizing: content-box;
+    padding: 5px 5px 10px;
+}
+
+li {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+nav img{
+    width: 70px;
+    justify-content: center;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #010513;
+}
+
+form {
+    background-color: #fff;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 3% auto;
+    padding: 30px 0px;
+    border: 1px solid #0000;
+    font-size: 13px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #0A1D56;
+}
+
+.form_div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.datos_personales {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    width: 40%;
+    margin-left: 20px;
+
+}
+
+.titulo_pago {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.datos_pago {
+    display: grid;
+    grid-template-rows: 0.5fr repeat(3, 1fr);
+    width: 40%;
+}
+
+.transferencia, .cupones, .tarjeta{
+    margin-top: 4%;
+}
+
+#pin{
+    max-width: 30px;
+}
+.cupones{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.pago_cupon {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 15px 0px;
+    justify-content: center;
+}
+.titulo_cupon{
+    margin-top: 6%;
+}
+
+.pago_cupon label {
+    font-size: 13px;
+    padding: 0;
+    margin: 0 5px;
+}
+
+
+.transferencia p,
+span {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.item_form {
+    box-sizing: border-box;
+}
+
+.boton {
+    background-color: #0A1D56;
+    border: 1px solid #0A1D56;
+    margin: 20px 5px 5px 5px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 30%;
+    box-sizing: border-box;
+    color: #ffff;
+    text-align: center;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color: #387ADF;
+    border: 1px solid #0A1D56;
+}
+
+.link_registro {
+    font-size: 13px;
+    text-decoration: none;
+    color: #387ADF;
+    text-decoration: underline;
+}
+
+.link_registro:hover {
+    text-decoration: none;
+    color: #0A1D56;
+}
+
+label {
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+input,
+option,
+select {
+    font-size: 13px;
+    padding: 5px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #0A1D56;
+    outline: none;
+}
+
+.mensaje{
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(218, 34, 34);
+    text-align: center;
+    margin-top: 1%;
+    padding: 0.5%;
+    max-width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgb(218, 34, 34);
+    background-color: rgba(200, 34, 34, 0.5);
+}
+
+.mensaje.visible {
+    display: block; 
+  }
+
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #0A1D56;
+    color: #ffff;
+    padding: 10px 0;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.div_redirects {
+    display: flex;
+    flex-direction: column;
+    color: #387ADF;
+}
+
+.div_redirects a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer_logo{
+    display: flex;
+    justify-content: center;
+}
+.footer_logo img{
+max-width: 120px;
+}
+.footer_link {
+    display: flex;
+    margin: 10px;
+    margin-left: 60%;
+}
+
+.footer_link i{
+    align-self: center;
+    padding-right: 10px;
+    max-block-size: 20px;
+    color: #000000;
+    border-radius: 7px;
+}
+
+.footer_link a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

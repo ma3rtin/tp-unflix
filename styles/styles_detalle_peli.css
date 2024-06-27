@@ -1,0 +1,336 @@
+body {
+    background-color: #010513;
+    color: #fff;
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+.logoPrincipal {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    padding-left: 30px;
+}
+
+.logo {
+    height: 130px;
+    width: 1x;
+    border-radius: 20px;
+}
+
+.menu {
+    width: 15%;
+    height: 100%;
+    padding-top: 0%;
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    background-color: #0A1D56;
+}
+
+.opcion {
+    padding: 20% 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.opcion:hover {
+    background-color: #372e871e;
+    color: #ffffff;
+}
+
+
+.detalle-peli a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.detalle-peli a:hover {
+    color: #00FFFF;
+}
+
+/*categorias*/
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+}
+
+.categorias {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    left: 100%;
+}
+
+.contenedor:hover .categorias {
+    display: block;
+    left: 100%;
+    bottom: 40%;
+}
+
+.categorias a {
+    background-color: #0c2266;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.4s;
+}
+
+.categorias a:hover {
+    color: #ffffff;
+    background-color: #463e91;
+    position: fixed;
+    z-index: 0;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+main {
+    width: 85%;
+    height: 100%;
+
+    position: fixed;
+    left: 15%;
+
+    overflow: auto;
+}
+
+.barraSuperior {
+    margin: 0%;
+
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background-color: #010513;
+}
+
+.buscador {
+    position: relative;
+    left: 25%;
+}
+
+#buscar {
+    padding: 10px 5px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #5d51c752;
+    border: #372e871e;
+    color: aliceblue;
+    opacity: 0.5;
+    outline: none;
+}
+
+.fotoPerfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+}
+
+
+a.perfil {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+a.perfil:hover {
+    background-color: #372e871e;
+    border-radius: 80%;
+    transform: scale(1.1);
+}
+
+.detalle-peli {
+    padding: 40px 30px 0px 30px;
+    display: flex;
+    position: relative;
+    font-size: small;
+
+}
+
+.detalle-peli .info {
+    flex: 1;
+    margin-left: 30px;
+    max-width: 560px;
+    max-height: 315px;
+}
+
+.controles {
+    display: flex;
+    margin-top: 20px;
+}
+
+.selector-temporada,
+.selector-capitulo {
+    margin-right: 20px;
+    width: 160px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0A1D56;
+
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.selector-temporada label,
+.selector-capitulo label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.controles select {
+    background-color: #0A1D56;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 12px;
+    width: 150px;
+    border-color: #0d2775;
+    font-size: 16px;
+}
+
+option {
+    font-size: 18px;
+}
+
+.boton {
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0px;
+}
+
+.detalle-peli button {
+    background-color: #0A1D56;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.detalle-peli button:hover {
+    transition: 0.4s;
+    background-color: #0d2775;
+}
+
+.texto-separado {
+    margin-left: 10px;
+}
+
+.sinopsis {
+    padding: 20px 30px;
+}
+
+/* Similares */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 30px;
+}
+
+.container h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Flechas */
+
+.similares {
+    margin-bottom: 70px;
+    background-color: #06021f;
+}
+
+.similares .carrusel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.similares .carrusel .flecha-izquierda,
+.similares .carrusel .flecha-derecha {
+    position: absolute;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.similares .carrusel .flecha-izquierda:hover,
+.similares .carrusel .flecha-derecha:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.similares .carrusel .flecha-izquierda {
+    left: 0;
+}
+
+.similares .carrusel .flecha-derecha {
+    right: 0;
+}
+
+/* Carrusel */
+
+.similares .carrusel .grid {
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.similares .carrusel .grid {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.similares .carrusel .grid .link {
+    width: 20%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.similares .carrusel .grid .link.hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.similares .carrusel .grid img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.grid img:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}

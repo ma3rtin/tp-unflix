@@ -1,0 +1,93 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/pantallasPerfil.css">
+  <title>Suscripcion</title>
+</head>
+
+<body>
+  <nav class="menu">
+    <section class="logoPrincipal">
+      <img src="../assets/images/iconos/logoBlanco.png" class="logo" />
+    </section>
+    <a class="opcion" href="../pages/principal.html">VOLVER</a>
+    </div>
+
+    <main>
+      
+      <div class="barraPerfil">
+         <section class="perfil">
+          <a class="linkPerfil" href="#"><img src="../assets/images/iconos/perfil.png" alt="foto de perfil" class="fotoPerfil"></a>
+          <p class="nombreUsuario"></p>
+         </section>
+      </div>
+      
+      <div class="configuracion">
+          
+          <div class="opciones">
+            <a href="../pages/cuenta.html" class="opcionConfiguracion">CUENTA</a>
+            <a href="../pages/suscripcion.html" class="opcionConfiguracion  elegida">SUSCRIPCION</a>
+            <a href="#" class="opcionConfiguracion" onclick="cerrarSesion()">CERRAR SESION</a>
+          </div>
+          
+          <div class="informacion">
+    
+            <div id="cartel" ><div><p>Se guardaron los datos exitosamente</p><button class="boton" onclick="cerrar()">Aceptar</button></div></div>
+
+           
+            <h4>METODO DE PAGO</h4>
+
+            <section class="metodos">
+              <form action="">
+           
+                <section class="datosTarjeta">
+                  
+                  <label for="metodo1"><input id="metodo1" type="radio" name="opcionPago" value="Tarjeta">Tarjeta de Credito</label>
+
+                  <section class="ingresoDatos">
+                  <input type="number" id="numeroTarjeta" placeholder="Numero de tarjeta">
+                  <input type="number" id="pinTarjeta" placeholder="XXX">
+                  </section>
+
+                </section>
+
+                <section class="datosCupon">
+                 
+                  <label for="metodo2"><input id="metodo2" type="radio" name="opcionPago" value="Cupon">Cupon de pago</label>
+
+                  <section class="ingresoDatos">
+                    <input type="checkbox" id="lugarPago1" name="opcionSucursal">
+                    <label for="lugarPago1">Pago Facil</label>
+                    <input type="checkbox" id="lugarPago2" name="opcionSucursal">
+                    <label for="lugarPago2">RapiPago</label>
+                  </section>
+
+                </section>
+             
+                <section class="datosTransferencia">
+                  <label for="metodo3"><input id="metodo3" type="radio" name="opcionPago" value="Tarnsferencia">Transferencia Bancaria</label>
+                  <p class="cbu"><span>CBU:</span> 12344393839440294123</p>
+                </section>
+           
+              </form>
+           
+            </section>
+           
+            <section class="seccionBotones">
+                
+                <button class="boton" href="#" onclick="guardarCambios()">Guardar Cambios</button>
+                <button class="boton cancelar" href="#">Cancelar Subscripcion</button>
+            
+            </section>
+        
+        </div>
+      
+      </div>
+    
+    </main>
+    
+
+    <script src="../scripts/scriptPerfil.js"></script>
+  </body>
+</html>

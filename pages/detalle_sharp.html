@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heridas abiertas</title>
+    <link rel="stylesheet" href="../styles/styles_detalle_peli.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../assets/images/iconos/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="menu">
+        <section class="logoPrincipal">
+          <img src="../assets/images/iconos/logoBlanco.png" class="logo" />
+        </section>
+        <a class="opcion" href="../pages/principal.html">INICIO</a>
+        <div class="contenedor">
+            <a class="opcion" id="pelicula" href="../pages/principal.html">PELÍCULAS</a>
+          </div>
+          <div class="contenedor">
+            <a class="opcion formato" id="serie" href="../pages/principal.html">SERIES</a>
+          </div>  
+      </nav>
+  
+      <main>
+        <div class="barraSuperior">
+          <div class="buscador">
+            <label for="buscar">
+              <input type="search" id="buscar" placeholder=" Buscar" onkeyup="buscar()" />
+            </label>
+          </div>
+  
+          <div class="perfil">
+            <a class="perfil" href="../pages/cuenta.html">
+              <img class="fotoPerfil" src="../assets/images/iconos/perfil.png" />
+            </a>
+          </div>
+        </div>
+        <section class="detalle-peli">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WkGXjodimtI?autoplay=1&controls=0&modestbranding=1&showinfo=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="info">
+                <h1>HERIDAS ABIERTAS</h1>
+                <p><i class="fa-solid fa-clapperboard"></i><strong> Género: </strong> Suspenso, Drama, Crimen, Misterio
+                </p>
+                <p><i class="fa-solid fa-users"></i><strong> Reparto:</strong>
+                    <a href="https://es.wikipedia.org/wiki/Amy_Adams" target="_blank"> Amy Adams</a>,
+                    <a href="https://es.wikipedia.org/wiki/Patricia_Clarkson" target="_blank"> Patricia Clarkson</a>,
+                    <a href="https://es.wikipedia.org/wiki/Chris_Messina" target="_blank"> Chris Messina </a>y
+                    <a href="https://es.wikipedia.org/wiki/Eliza_Scanlen" target="_blank"> Eliza Scanlen</a>
+
+                </p>
+                <div class="controles">
+                    <div class="selector-capitulo">
+                        <label for="capitulo"><strong>CAPÍTULO:</strong></label>
+                        <select id="capitulo">
+
+                        </select>
+                    </div>
+                    <div class="selector-temporada">
+                        <label for="temporada"><strong>TEMPORADA:</strong></label>
+                        <select id="temporada">
+                            <option value="temporada1">Temporada 1</option>
+                            <option value="temporada2">Temporada 2</option>
+                            <option value="temporada3">Temporada 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="boton">
+                    <button onclick="watchMovie()"> <i class="fa-solid fa-play"></i> <span class="texto-separado"> VER
+                        </span></button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="sinopsis">
+                <p><i class="fa-solid fa-circle-info"></i><strong> Sinopsis:</strong> <i>La periodista Camille Preaker
+                        regresa a su pueblo natal para investigar el asesinato de dos chicas jóvenes. A medida que
+                        avanza en sus pesquisas, Camille se introduce en una trama en la que su pasado se funde con lo
+                        que está ocurriendo.</i>
+                </p>
+            </div>
+        </section>
+
+        <section class="similares">
+            <div class="container">
+                <h3>Sugerencias</h3>
+            </div>
+
+            <div class="carrusel">
+                <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i
+                        class="fa-solid fa-angle-left"></i></button>
+                <div class="grid" onmouseenter="start()" onmouseleave="stop()">
+
+                </div>
+                <button role="button" id="flecha-derecha" class="flecha-derecha"><i
+                        class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+        </section>
+    </main>
+    <script src="../scripts/detalle-peli.js"></script>
+</body>
+
+</html>
